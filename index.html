@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta property="og:title" content="Tony Cassara | Software Engineer | Los Angeles, CA">
+  <meta property="description" content="Software Engineer specializing in Front-End Web Development.">
+  <meta property="og:description" content="Software Engineer specializing in Front-End Web Development.">
+  <meta property="og:image" content="./assets/profile.jpg">
+  <meta property="og:url" content="http://www.tonycassara.com">
+
+  <meta property="og:site_name" content="Tony Cassara | Software Engineer | Los Angeles, CA">
+  <meta name="twitter:image:alt" content="Tony Cassara | Software Engineer | Los Angeles, CA">
+
+  <title>Tony Cassara | Software Engineer | Los Angeles, CA</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85613431-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-85613431-1');
+  </script>
+  <style>
+    body {
+      background: #f6f1f0;
+      font-family: Montserrat, Arial, Helvetica, Georgia;
+      font-weight: 300;
+      margin: 0;
+    }
+    div {
+      color: black;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Raleway, Arial, Helvetica, Georgia;
+    }
+    li {
+      padding-left: 0;
+    }
+    ul {
+      padding-left: 0%;
+    }
+    a {
+      color: black;
+    }
+    #background {
+      position: absolute;
+      background-image: url("./assets/background.jpg");
+      background-position: right;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100vw;
+    }
+    #info {
+      width: 30%;
+      transform: translateY(50%);
+      margin: auto 5vw auto auto;
+    }
+    @media only screen and (max-width: 1280px) {
+      #info {
+        width: 50%;
+      }
+    }
+    @media only screen and (max-width: 960px) {
+      #info {
+        width: 55%;
+        margin: auto 2vw auto auto;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      #background {
+        background: linear-gradient(rgba(255, 255, 255, 0) 60%, #f6f1f0), url("./assets/background.jpg");
+        background-position: top;
+        background-size: cover;
+        height: 40vh;
+        width: 100vw;
+        position: relative;
+      }
+      #info {
+        width: 80%;
+        margin: auto;
+        transform: translateY(0);
+      }
+      a > img.social-icon {
+        filter: none;
+      }
+    }
+    #yt {
+      width: auto;
+      object-fit: cover;
+    }
+    img.social-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      filter: grayscale(1);
+      object-fit: contain;
+      transition: filter .25s ease;
+    }
+    .social-links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+    .social-links > a {
+      display: inline-block;
+    }
+    .social-links > a:hover > img {
+      filter: none;
+      transition: filter .25s ease;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:700" rel="stylesheet">
+</head>
+<body>
+  <div id="background"></div>
+  <div id="info">
+    <h1 style="display: inline-block; margin-bottom: 0">Tony Cassara</h1>
+    <h5 style="display: inline-block; margin: 0">Software Engineer</h5>
+    <h2>Henlo, friend!</h2>
+    <p>
+      If you came here from my YouTube, <b>thank you!</b><br />
+      I am in the process of moving my domain over to AWS.<br /><br />
+      For now feel free to connect with me on social media:<br /><br />
+    </p>
+    <div class="social-links">
+      <a href="https://www.youtube.com/c/tonycassara"><img id="yt" class="social-icon" src="./assets/yt-icon.png"></img></a>
+      <a href="https://www.linkedin.com/in/tonycassara"><img id="li" class="social-icon" src="./assets/li-icon.png"></img></a>
+      <a href="https://www.twitter.com/tonycassara2"><img id="tw" class="social-icon" src="./assets/tw-icon.png"></img></a>
+      <a href="https://www.facebook.com/tonycassara2"><img id="fb" class="social-icon" src="./assets/fb-icon.png"></img></a>
+    </div>
+  </div>
+</body>
+</html>
